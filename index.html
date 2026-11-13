@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GeoTrail — ტურისტული ვებგვერდი საქართველოს საუკეთესო მიმართულებებით, ტურების დაჯავშნით და მოგზაურთა შთაბეჭდილებებით.">
+  <meta name="theme-color" content="#16324f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%2316324f%27/%3E%3Cpath d=%27M3 26l9-14 5 7 4-5 8 12z%27 fill=%27%23e07a5f%27/%3E%3C/svg%3E">
+  <title>GeoTrail — აღმოაჩინე საქართველო</title>
+  <link rel="preload" href="assets/img/hero.svg" as="image">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">გადასვლა მთავარ შინაარსზე</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero" aria-label="GeoTrail — მთავარი">Geo<span>Trail</span></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="მენიუს გახსნა">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="siteNav" class="site-nav" aria-label="მთავარი ნავიგაცია">
+        <ul>
+          <li><a href="#about">ჩვენ შესახებ</a></li>
+          <li><a href="#destinations">მიმართულებები</a></li>
+          <li><a href="#reviews">შთაბეჭდილებები</a></li>
+          <li><a href="#booking">დაჯავშნა</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <p class="eyebrow">ტურები საქართველოში</p>
+        <h1 id="hero-title">აღმოაჩინე საქართველო, <br>რომელიც გიყვარდება</h1>
+        <p class="lead">მთები, ზღვა, ღვინო და ისტორია — ერთ მარშრუტში. შეარჩიე მიმართულება და დაგვიკავშირდი.</p>
+        <a class="btn" href="#booking">დაჯავშნე ტური</a>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">რატომ GeoTrail?</h2>
+        <div class="features">
+          <article class="feature">
+            <h3>ადგილობრივი გიდები</h3>
+            <p>გამოცდილი გიდები, რომლებმაც რეგიონი კარგად იციან.</p>
+          </article>
+          <article class="feature">
+            <h3>მოქნილი მარშრუტები</h3>
+            <p>ერთდღიანი და მრავალდღიანი ტურები ნებისმიერი ბიუჯეტისთვის.</p>
+          </article>
+          <article class="feature">
+            <h3>უსაფრთხო გადაადგილება</h3>
+            <p>კომფორტული ტრანსპორტი და დაზღვევა ყველა მონაწილისთვის.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="section section-alt" aria-labelledby="dest-title">
+      <div class="container">
+        <h2 id="dest-title">პოპულარული მიმართულებები</h2>
+        <div class="filters" role="group" aria-label="მიმართულებების ფილტრი">
+          <button class="chip is-active" data-filter="all" aria-pressed="true">ყველა</button>
+          <button class="chip" data-filter="mountain" aria-pressed="false">მთა</button>
+          <button class="chip" data-filter="culture" aria-pressed="false">კულტურა</button>
+          <button class="chip" data-filter="sea" aria-pressed="false">ზღვა</button>
+        </div>
+        <div class="cards" id="cards">
+          <article class="card" data-category="mountain">
+            <figure>
+              <img src="assets/img/kazbegi.svg" alt="ყაზბეგის მთები" width="600" height="400" loading="lazy">
+              <figcaption class="sr-only">ყაზბეგი</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>ყაზბეგი</h3>
+              <p>გერგეტის სამების ეკლესია და კავკასიონის თვალწარმტაცი ხედები.</p>
+              <p class="price">დან <strong>120 ₾</strong></p>
+            </div>
+          </article>
+          <article class="card" data-category="mountain">
+            <figure>
+              <img src="assets/img/svaneti.svg" alt="სვანეთის კოშკები" width="600" height="400" loading="lazy">
+              <figcaption class="sr-only">სვანეთი</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>სვანეთი</h3>
+              <p>უშგულის კოშკები, მესტია და ყინულოვანი მყინვარები.</p>
+              <p class="price">დან <strong>320 ₾</strong></p>
+            </div>
+          </article>
+          <article class="card" data-category="culture">
+            <figure>
+              <img src="assets/img/kakheti.svg" alt="კახეთის ვენახები" width="600" height="400" loading="lazy">
+              <figcaption class="sr-only">კახეთი</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>კახეთი</h3>
+              <p>ღვინის მარნები, ქვევრის ტრადიცია და სიღნაღი.</p>
+              <p class="price">დან <strong>150 ₾</strong></p>
+            </div>
+          </article>
+          <article class="card" data-category="sea">
+            <figure>
+              <img src="assets/img/batumi.svg" alt="ბათუმის სანაპირო" width="600" height="400" loading="lazy">
+              <figcaption class="sr-only">ბათუმი</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>ბათუმი</h3>
+              <p>შავი ზღვის სანაპირო, ბულვარი და ბოტანიკური ბაღი.</p>
+              <p class="price">დან <strong>200 ₾</strong></p>
+            </div>
+          </article>
+          <article class="card" data-category="culture">
+            <figure>
+              <img src="assets/img/tbilisi.svg" alt="თბილისის პანორამა" width="600" height="400" loading="lazy">
+              <figcaption class="sr-only">თბილისი</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>თბილისი</h3>
+              <p>ძველი უბნები, გოგირდის აბანოები და ნარიყალა.</p>
+              <p class="price">დან <strong>80 ₾</strong></p>
+            </div>
+          </article>
+          <article class="card" data-category="culture">
+            <figure>
+              <img src="assets/img/vardzia.svg" alt="ვარძიის გამოქვაბულები" width="600" height="400" loading="lazy">
+              <figcaption class="sr-only">ვარძია</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>ვარძია</h3>
+              <p>კლდეში ნაკვეთი ისტორიული მონასტრის კომპლექსი.</p>
+              <p class="price">დან <strong>180 ₾</strong></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section" aria-labelledby="rev-title">
+      <div class="container">
+        <h2 id="rev-title">მოგზაურთა შთაბეჭდილებები</h2>
+        <div class="slider" id="slider" aria-roledescription="კარუსელი" aria-label="მოგზაურთა შეფასებები">
+          <div class="slides" id="slides" aria-live="polite">
+            <figure class="slide is-active">
+              <blockquote><p>ყაზბეგის ტური იდეალურად იყო ორგანიზებული. გიდმა ყველა დეტალი გვიამბო.</p></blockquote>
+              <figcaption>— ნინო, თბილისი</figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote><p>კახეთში ღვინის დეგუსტაცია დაუვიწყარი იყო. აუცილებლად დავბრუნდები.</p></blockquote>
+              <figcaption>— გიორგი, ქუთაისი</figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote><p>სვანეთის მარშრუტი რთული, მაგრამ ძალიან ლამაზი აღმოჩნდა. რეკომენდაციას ვუწევ!</p></blockquote>
+              <figcaption>— Anna, Germany</figcaption>
+            </figure>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn" id="prevBtn" aria-label="წინა შეფასება">&#10094;</button>
+            <div class="dots" id="dots" role="tablist" aria-label="სლაიდის არჩევა"></div>
+            <button class="slider-btn" id="nextBtn" aria-label="შემდეგი შეფასება">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section section-alt" aria-labelledby="book-title">
+      <div class="container narrow">
+        <h2 id="book-title">დაჯავშნის ფორმა</h2>
+        <form id="bookingForm" novalidate>
+          <div class="field">
+            <label for="name">სახელი და გვარი</label>
+            <input type="text" id="name" name="name" autocomplete="name" required minlength="3">
+            <p class="error" id="nameError" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">ელ-ფოსტა</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <p class="error" id="emailError" role="alert"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="destination">მიმართულება</label>
+              <select id="destination" name="destination" required>
+                <option value="">აირჩიეთ…</option>
+                <option>ყაზბეგი</option>
+                <option>სვანეთი</option>
+                <option>კახეთი</option>
+                <option>ბათუმი</option>
+                <option>თბილისი</option>
+                <option>ვარძია</option>
+              </select>
+              <p class="error" id="destinationError" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="people">ადამიანების რაოდენობა</label>
+              <input type="number" id="people" name="people" min="1" max="20" value="2" required>
+              <p class="error" id="peopleError" role="alert"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">შეტყობინება (არასავალდებულო)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn">გაგზავნა</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 GeoTrail. ყველა უფლება დაცულია.</p>
+      <address>
+        <a href="mailto:info@geotrail.example">info@geotrail.example</a> · <a href="tel:+995322000000">+995 32 200 00 00</a>
+      </address>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="ზემოთ დაბრუნება" hidden>&#8593;</button>
+</body>
+</html>
