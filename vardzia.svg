@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="ვარძია">
+  <rect width="600" height="400" fill="#b08968"/>
+  <circle cx="470" cy="110" r="45" fill="#fff" opacity=".35"/>
+  <path d="M0 300 L120 180 L220 260 L340 130 L460 270 L600 200 V400 H0Z" fill="#000" opacity=".22"/>
+  <path d="M0 350 L150 270 L280 330 L420 250 L600 340 V400 H0Z" fill="#000" opacity=".38"/>
+</svg>

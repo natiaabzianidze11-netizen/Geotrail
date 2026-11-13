@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice" role="img" aria-label="მთების პეიზაჟი">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16324f"/><stop offset=".6" stop-color="#e07a5f"/><stop offset="1" stop-color="#f2cc8f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="700" fill="url(#sky)"/>
+  <circle cx="1200" cy="260" r="70" fill="#fff3d6" opacity=".9"/>
+  <path d="M0 520 L200 300 L340 420 L520 220 L720 440 L900 280 L1100 450 L1300 320 L1600 500 V700 H0Z" fill="#3d5a80" opacity=".85"/>
+  <path d="M0 580 L180 430 L330 520 L560 360 L760 540 L980 400 L1200 560 L1420 430 L1600 540 V700 H0Z" fill="#293241"/>
+  <path d="M0 650 L260 560 L480 640 L760 570 L1040 650 L1320 580 L1600 650 V700 H0Z" fill="#1b2230"/>
+</svg>
